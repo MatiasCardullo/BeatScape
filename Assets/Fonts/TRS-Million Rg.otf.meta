@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 2f519da2ad529c04c9514ada7c5c1720
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: TRS Million
+  fontNames:
+  - TRS Million
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: e4b62b4d8f29cf24fb32ab423a7eb9e6, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
