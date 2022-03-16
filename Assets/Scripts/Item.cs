@@ -23,8 +23,9 @@ public abstract class Item : ScriptableObject
         id = GetInstanceID();
     }
 
-    public virtual void Use()
+    public virtual bool Use()
     {
         Debug.Log("Using item "+ name);
+        return true;
     }
 }

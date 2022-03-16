@@ -31,6 +31,6 @@ public class InventorySlotUI : MonoBehaviour
     public void Use()
     {
         item.Use();
-        //ClearSlot();
+        ClearSlot();
     }
 }

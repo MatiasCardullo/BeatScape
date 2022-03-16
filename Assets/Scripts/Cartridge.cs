@@ -1,6 +1,7 @@
 ﻿
 using UnityEngine;
 
+
 [CreateAssetMenu(fileName = "New Cartridge", menuName = "Items/Cartridge")]
 public class Cartridge : Item
 {
@@ -18,8 +19,15 @@ public class Cartridge : Item
         timeDuration = audio.length;
     }
 
-    public override void Use()
+    public override bool Use()
     {
+        bool output=false;
         base.Use();
+        if (User.clip == null)
+        {
+            User.clip = audio;
+            output = true;
+        }
+        return output;
     }
 }

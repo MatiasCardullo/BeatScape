@@ -13,9 +13,15 @@ MonoBehaviour:
   m_Name: PlayerInventory
   m_EditorClassIdentifier: 
   Container:
+  - item: {fileID: 11400000, guid: 76f0a3975e2160b45856ce984571d26b, type: 2}
+    amount: 2
   - item: {fileID: 11400000, guid: 4a1be63cd1bf2e94394a8a78ad661ff6, type: 2}
     amount: 1
-  - item: {fileID: 11400000, guid: f28a33dcf8b841b4b9b8e70fe7a63231, type: 2}
-    amount: 2
+  - item: {fileID: 11400000, guid: 20022bf701785ea4c8116debf94ea9af, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 8f8b4ff39939d8c40b3efacb12a729d9, type: 2}
+    amount: 1
   - item: {fileID: 11400000, guid: 3943591ea595c5a439ef3d74f89e24b1, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: f28a33dcf8b841b4b9b8e70fe7a63231, type: 2}
     amount: 1

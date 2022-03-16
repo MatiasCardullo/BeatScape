@@ -6,6 +6,8 @@ public class User : MonoBehaviour
     public Inventory inventory;
     public Slider slider; public Gradient gradient;
     public Image healthBar, shieldBar, shieldIcon, shieldIcon2;
+    public static AudioClip clip;
+    public AudioSource audio;
 
     public Animator bottomAnimator;
     public GameObject topAnimator, topAnimator2;
@@ -14,7 +16,7 @@ public class User : MonoBehaviour
 
     public byte forceLevel = 0,maxlevel;
     public float fireRate;
-    public bool admin=false;
+    public bool admin=false,clearClip=false;
 
     public int coin = 0, speed, basespeed;
     public static byte level = 0;
@@ -31,6 +33,7 @@ public class User : MonoBehaviour
 
     void Start()
     {
+        //audio = GetComponent<AudioSource>();
         maxlevel = GameManager.maxlevel;
         transform.position = new Vector2(0,-2);
         shield = 0; maxShield = 100;
@@ -158,6 +161,30 @@ public class User : MonoBehaviour
             if (Input.GetButton("Fire3"))
             {
                 Shooting(shoot);
+            }
+            if (Input.GetKey(KeyCode.P))
+            {
+                if (!audio.isPlaying)
+                {
+                    if (clip != null)
+                    {
+                        audio.clip = clip;
+                        audio.Play();
+                    }
+                }
+                else
+                {
+                    audio.Pause();
+                }
+            }
+            if (Input.GetKey(KeyCode.Escape))
+            {
+                if (audio.isPlaying)
+                {
+                    audio.Stop();
+                    audio.clip = null;
+                    clip = null;
+                }
             }
         }
         else

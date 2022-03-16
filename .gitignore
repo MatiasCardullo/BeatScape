@@ -2,3 +2,7 @@ Assets/Resources/Music/
 Builds/
 Logs/
 Library/
+Temp/
+obj/
+.plastic/
+.vs/
